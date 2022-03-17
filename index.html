@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetStore</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>PetStore</h1>
+        <nav>
+          <button>Todos</button>
+          <button>Ração</button>
+          <button>Brinquedos</button>
+          <button>Acessórios</button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="pagina">
+        <section class="box">
+          <article class="cardsProdutos">
+            <div class="cardsProdutos-foto">
+              <img src="imagens/ração1.png" alt="Ração Gran PLus" />
+            </div>
+            <div class="cardsProdutos-info">
+              <h3 id="cardsProdutos-categoria">Ração</h3>
+              <h2>Ração Gran Plus</h2>
+              <small
+                >Ideal para felinos castrados, auxiliando na manutenção do peso
+                ideal...</small
+              >
+              <p>R$150.00</p>
+              <button>Adicionar ao carrinho</button>
+            </div>
+          </article>
+          <article class="cardsProdutos">
+            <div class="cardsProdutos-foto">
+              <img src="imagens/Arranhador.png" alt="Arranhador preto" />
+            </div>
+            <div class="cardsProdutos-info">
+              <h3 id="cardsProdutos-categoria">Brinquedos</h3>
+              <h2>Arranhador</h2>
+              <small
+                >Brinquedo destinado a incentivar o gato a não arranhar seus
+                móveis...</small
+              >
+              <p>R$80.00</p>
+              <button>Adicionar ao carrinho</button>
+            </div>
+          </article>
+          <article class="cardsProdutos">
+            <div class="cardsProdutos-foto">
+              <img src="imagens/ração2.png" alt="Ração Premier" />
+            </div>
+            <div class="cardsProdutos-info">
+              <h3 id="cardsProdutos-categoria">Ração</h3>
+              <h2>Ração Premier</h2>
+              <small
+                >Ideal para felinos castrados de 7 a 12 anos que vivem em
+                ambientes...</small
+              >
+              <p>R$45.00</p>
+              <button>Adicionar ao carrinho</button>
+            </div>
+          </article>
+          <article class="cardsProdutos">
+            <div class="cardsProdutos-foto">
+              <img src="imagens/comedouro.png" alt="Comedouro" />
+            </div>
+            <div class="cardsProdutos-info">
+              <h3 id="cardsProdutos-categoria">Acessórios</h3>
+              <h2>Comedouro</h2>
+              <small
+                >Melhore a qualidade de alimentação do seu pet. Os comedouros
+                ...</small
+              >
+              <p>R$160.00</p>
+              <button>Adicionar ao carrinho</button>
+            </div>
+          </article>
+          <article class="cardsProdutos">
+            <div class="cardsProdutos-foto">
+              <img src="imagens/caixa.png" alt="Caixa de Areia" />
+            </div>
+            <div class="cardsProdutos-info">
+              <h3 id="cardsProdutos-categoria">Acessórios</h3>
+              <h2>Caixa de Areia</h2>
+              <small
+                >Caixa anti respingos, aumenta a área de proteção e evita a
+                projeção de ...</small
+              >
+              <p>R$186.00</p>
+              <button>Adicionar ao carrinho</button>
+            </div>
+          </article>
+          <article class="cardsProdutos">
+            <div class="cardsProdutos-foto">
+              <img src="imagens/Torre.png" alt="Toca" />
+            </div>
+            <div class="cardsProdutos-info">
+              <h3 id="cardsProdutos-categoria">Brinquedos</h3>
+              <h2>Torre e Toca</h2>
+              <small
+                >Que tal uma super torre com cama para seu gato, onde ele pode
+                se ...</small
+              >
+              <p>R$400.00</p>
+              <button>Adicionar ao carrinho</button>
+            </div>
+          </article>
+        </section>
+        <aside class="lateral">
+          <form class="pesquisa">
+            <input type="text" placeholder="Digite aqui sua pesquisa" />
+            <button>Pesquisar</button>
+          </form>
+          <section class="carrinho">
+            <div class="carrinho-header">
+              <h2 class="titulo">Carrinho de Compras</h2>
+            </div>
+            <section class="itensNoCarrinho">
+              <article class="card">
+                <img src="imagens/Torre.png" alt="Toca" class="card-foto" />
+                <div class="card-infoProduto">
+                  <h3>Torre e Toca</h3>
+                  <p>R$400.00</p>
+                  <button>Remover Produto</button>
+                </div>
+              </article>
+              <article class="card">
+                <img
+                  src="imagens/ração1.png"
+                  alt="Ração Gran PLus"
+                  class="card-foto"
+                />
+                <div class="card-infoProduto">
+                  <h3>Ração Gran Plus</h3>
+                  <p>R$150.00</p>
+                  <button>Remover Produto</button>
+                </div>
+              </article>
+              <article class="card">
+                <img
+                  src="imagens/comedouro.png"
+                  alt="Comedouro"
+                  class="card-foto"
+                />
+                <div class="card-infoProduto">
+                  <h3>Comedouro</h3>
+                  <p>R$160.00</p>
+                  <button>Remover Produto</button>
+                </div>
+              </article>
+            </section>
+            <section class="total">
+              <div class="total-linha">
+                <p class="total-linha-branco">Quantidade</p>
+                <p>3</p>
+              </div>
+              <div class="total-linha">
+                <p class="total-linha-branco">Total</p>
+                <p>R$710.00</p>
+              </div>
+            </section>
+          </section>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>
